@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
 import icon from "astro-icon";
-// import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +9,5 @@ export default defineConfig({
   integrations: [mdx(), icon(), tailwind({
     applyBaseStyles: false
   })],
-  site: 'https://maressystems.com',
-  // adapter: vercel()
+  site: 'https://maressystems.com'
 });
